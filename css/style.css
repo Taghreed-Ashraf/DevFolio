@@ -1,0 +1,735 @@
+body {
+  background-color: #f5f5f5;
+}
+
+/*--------------Start Section One (Header)-------------*/
+/*--------------Navbar-------------*/
+.navbar {
+  font-weight: 600;
+  background-color: black;
+  z-index: 5;
+}
+
+.navbar-toggler {
+  background-color: white !important;
+  padding: 0;
+}
+
+/*--------------DropDown-------------*/
+.navbar .logo {
+  font-size: 28px;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  right: 100%;
+}
+
+.dropdown-item i {
+  padding-left: 20px;
+  font-size: 10px;
+}
+
+/*--------------Links-------------*/
+.link {
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.5s;
+  color: #27292c;
+}
+
+.link:hover {
+  color: #007aff;
+  background-color: transparent;
+}
+
+.line::after {
+  content: "";
+  background-color: white;
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  top: 80%;
+  left: 20px;
+}
+
+.extra::after {
+  width: 70px;
+}
+
+.hide::after {
+  visibility: hidden;
+  left: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.hide:hover.hide::after {
+  visibility: visible;
+  left: 20px;
+}
+/*--------------Header-------------*/
+header {
+  background-image: url(../image/hero-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.layer {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+
+/* -----------Caption-------------   */
+.caption .name {
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 86px;
+}
+
+.caption .text::after {
+  content: " | ";
+  font-weight: 600;
+  font-size: 42px;
+  animation-name: typing;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes typing {
+  0% {content: " |";}
+  1% {content: "D|";}
+  3% {content: "De|";}
+  4% {content: "Des|";}
+  6% {content: "Desi|";}
+  7% {content: "Desig|";}
+  9% {content: "Design|";}
+  10% {content: "Designe|";}
+  12% {content: "Designer|";}
+  13% {content: "Designer|";}
+  14% {content: "Designer|";}
+  15% {content: "Designer|";}
+  16% {content: "Designe|";}
+  18% {content: "Design|";}
+  19% {content: "Desig|";}
+  20% {content: "Desi|";}
+  21% {content: "Des|";}
+  22% {content: "De|";}
+  23% {content: "D|";}
+  25% {content: "De|";}
+  26% {content: "Dev|";}
+  27% {content: "Deve|";}
+  28% {content: "Devel|";}
+  30% {content: "Develo|";}
+  31% {content: "Develop|";}
+  32% {content: "Develope|";}
+  33% {content: "Developer|";}
+  34% {content: "Developer|";}
+  35% {content: "Developer|";}
+  36% {content: "Develope|";}
+  37% {content: "Develop|";}
+  38% {content: "Develo|";}
+  39% {content: "Devel|";}
+  40% {content: "Deve|";}
+  41% {content: "Dev|";}
+  42% {content: "De|";}
+  43% {content: "D|";}
+  44% {content: "|";}
+  45% {content: "F |";}
+  46% {content: "Fr |";}
+  47% {content: "Fre |";}
+  48% {content: "Free|";}
+  49% {content: "Freel|";}
+  50% {content: "Freela|";}
+  52% {content: "Freelan|";}
+  53% {content: "Freelanc|";}
+  54% {content: "Freelance|";}
+  55% {content: "Freelancer|";}
+  56% {content: "Freelancer|";}
+  57% {content: "Freelancer|";}
+  58% {content: "Freelance|";}
+  59% {content: "Freelanc|";}
+  60% {content: "Freelan|";}
+  62% {content: "Freela|";}
+  63% {content: "Freel|";}
+  64% {content: "Free|";}
+  65% {content: "Fre|";}
+  66% {content: "Fr|";}
+  67% {content: "F|";}
+  68% {content: "|";}
+  69% {content: "P |";}
+  70% {content: "Ph|";}
+  71% {content: "Pho|";}
+  72% {content: "Phot|";}
+  73% {content: "Photo|";}
+  74% {content: "Photog|";}
+  75% {content: "Photogr|";}
+  76% {content: "Photogra|";}
+  78% {content: "Photograp|";}
+  79% {content: "Photograph|";}
+  80% {content: "Photographe|";}
+  81% {content: "Photographer|";}
+  82% {content: "Photographer|";}
+  83% {content: "Photographer|";}
+  84% {content: "Photographer|";}
+  85% {content: "Photographe|";}
+  86% {content: "Photograph|";}
+  87% {content: "Photograp|";}
+  88% {content: "Photogra|";}
+  90% {content: "Photogr|";}
+  91% {content: "Photog|";}
+  92% {content: "Photo|";}
+  94% {content: "Phot|";}
+  95% {content: "Pho|";}
+  97% {content: "Ph|";}
+  98% {content: "P|";}
+  100% {content: "|";}
+}
+/*--------------End Section One (Header)-------------*/
+
+/*--------------Start Section two (About)------------*/
+.color-black {
+  color: #1e1e1e;
+}
+
+.color-gray {
+  color: #4e4e4e;
+}
+
+.color-blue {
+  color: #007aff;
+}
+
+#about .about-data .data-skills .progress,
+#about .about-data .data-skills .progress-bar {
+  border-radius: 0;
+  height: 13px;
+}
+
+#about .about-data .data-skills h4,
+#about .about-data .data-info p span {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#about .about-data .data-skills span {
+  color: #4e4e4e;
+}
+
+#about .about-text h5 {
+  font-weight: 500;
+  font-size: 32px;
+  position: relative;
+}
+
+#about .about-text h5::after {
+  content: "";
+  background-color: #007aff;
+  width: 100px;
+  height: 4px;
+  position: absolute;
+  top: 60%;
+  left: 0;
+}
+
+#about .about-text p {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  padding-right: 50px;
+}
+
+/*--------------End Section two (About)------------*/
+
+/* -----------Start Section three (services)------------ */
+#services .container .row h3,
+#blog .container .row h3,
+#portfolio .container .row h3 {
+  font-weight: 700;
+  font-size: 48px;
+}
+
+#portfolio .container .row .line-3::after,
+#blog .container .row .line-3::after,
+#services .container .row .line-2::after {
+  content: "";
+  background-color: #007aff;
+  width: 45px;
+  height: 6px;
+  position: absolute;
+  top: 50%;
+  left: 48%;
+}
+
+#services .container .card {
+  border-radius: 20px;
+}
+
+#services .container .card i {
+  width: 120px;
+  height: 120px;
+  border: solid 10px #007aff;
+  transition: all 0.5s;
+}
+
+#services .container .card {
+  box-shadow: 0 0 8px #c9c3c3;
+}
+
+#services .container .card .bi {
+  font-size: 35px;
+}
+
+#services .container .card:hover i {
+  background-color: #007aff;
+  border: #cde1f8 solid 10px;
+}
+
+#services .container .card h5 {
+  font-size: 22px;
+  font-weight: 500;
+}
+/* -----------End Section three (services)------------ */
+
+/* ------------Start Section four (Number)------------ */
+#number .image {
+  background-image: url(../image/counters-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#number .overlay {
+  background-color: #007aff;
+  opacity: 0.7;
+}
+
+#number .container .card {
+  background-color: transparent;
+  border: none;
+}
+
+#number .container .card i {
+  width: 80px;
+  height: 80px;
+  font-size: 25px;
+  color: #fff;
+  border: solid 10px #cde1f8;
+  /* box-shadow: 0 0 0 10px #cde1f8; */
+}
+
+#number .container .card p {
+  font-size: 32px;
+}
+/* ------------End Section four (Number)------------ */
+
+/* ------------Start Section Five (PORTFOLIO)---------- */
+/*------h3 & p with section three-----*/
+
+#portfolio .container .row .card {
+  box-shadow: 0 0 5px #c9c3c3;
+}
+
+#portfolio .container .row .card .link-4 {
+  width: 40px;
+  height: 40px;
+  border: #007aff 3px solid;
+}
+
+#portfolio .container .row .card .link-4 i {
+  font-size: 20px;
+}
+
+#portfolio .container .row .card h3 {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+#portfolio .container .row .card p {
+  font-size: 13px;
+}
+
+#portfolio .container .row .card:hover .press img {
+  transform: scale(1.2);
+}
+
+#portfolio .container .row .card .press img {
+  transition: all 0.5s;
+}
+
+/* ------------End Section Five (PORTFOLIO)---------- */
+
+/* ------------Start Section Six (Slider)----------- */
+#slider .image {
+  background-image: url(../image/overlay-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#slider .overlay {
+  background-color: #007aff;
+  opacity: 0.7;
+}
+
+#slider .image .carousel-item .pic {
+  width: 18%;
+  border-radius: 50%;
+}
+
+#slider .image .carousel-item h5 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#slider .image .carousel-item p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#slider .image .row .carousel-indicators button {
+  width: 13px !important ;
+  height: 13px !important;
+  border-radius: 50% !important;
+}
+/* ------------End Section Six (Slider)----------- */
+
+/* ------------Start Section Seven (Blog)----------- */
+#blog .container .row .card-body .move {
+  position: absolute;
+  top: 49%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: #007aff;
+  width: 20%;
+  border-radius: 5PX;
+}
+
+#blog .container .row .card-body .extra {
+  width: 25%;
+}
+
+#blog .container .row .card-body .move h5 {
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+#blog .container .row .card-body h3 {
+  font-size: 21;
+  font-weight: 500;
+}
+
+#blog .container .row .card-body .link-5{
+  transition: all 0.5s;
+}
+
+#blog .container .row .card-body .link-5:hover {
+  color: #007aff !important;
+}
+
+#blog .container .row .card-body .subtitle img {
+  width: 32px;
+}
+
+#blog .container .row .background {
+  background-color: #F7F7F7;
+  border-top: 1px solid rgba(0,0,0,.125);
+}
+/* ------------End Section Seven (Blog)----------- */
+
+/* ------------Start Section eight (contact)---------- */
+#contact .image {
+  background-image: url(../image/overlay-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#contact .overlay {
+  background-color: #0062D3;
+  opacity: 0.7;
+}
+
+#contact .image form .outline {
+  border-radius: 0;
+  font-size: 13px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+#contact .image form .outline:focus {
+  border: solid 1px #007aff;
+  outline: #007aff;
+}
+
+#contact .image .contact {
+  padding: 0 30px;
+}
+
+#contact .image .contact h3 {
+  font-weight: 500;
+  font-size: 32px;
+  position: relative;
+}
+
+#contact .image .contact h3::after {
+  content: "";
+  background-color: #007aff;
+  width: 90px;
+  height: 3px;
+  position: absolute;
+  top: 75%;
+  left: 0;
+}
+
+#contact .image form .btn-1 {
+  border-radius: 25px;
+  font-size: 19px;
+}
+
+#contact .image .text-right p {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+#contact .image .text-right ul {
+  margin-left: 25px;
+}
+
+#contact .image .text-right .icons span {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 3px solid #007aff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .image .text-right .icons ul i {
+  color: black;
+}
+
+#contact .image .text-right .icons span:hover {
+  background-color: #007aff;
+  border-color: rgb(190, 186, 186);
+}
+
+#contact .image .text-right .icons span:hover i {
+  color: white ;
+}
+
+#contact .image .text-right .icons ul i{
+  font-size: 20px;
+}
+
+#contact .image .text-right ul li i{
+color: #007aff;
+}
+/* ------------End Section eight (contact)---------- */
+
+/* ------------Start Section nine (footer)------------ */
+footer {
+  background-color: #0062D3;
+}
+
+footer span {
+  font-weight: bolder;
+}
+
+footer p {
+  line-height: 1.8;
+}
+
+#topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  background-color: #0062D3;
+  color:  white;
+}
+
+/* ------------End Section nine (footer)------------ */
+
+/*---------Media Query ------------*/
+
+@media screen and (max-width:568px) {
+
+  header h1 {
+    font-size: 35px !important;
+    font-weight: 600 !important;
+    line-height: 56px !important;
+  }
+
+  .caption .text::after {
+    font-size: 30px !important;
+  }
+
+/* --------about----------- */
+#about .data-img {
+  text-align: left !important;
+}
+
+#about .data-skills h4,
+#about .data-skills span {
+  padding-left: 0 !important;
+}
+
+#about .data-skills .progress
+{
+  margin-left: 0 !important;
+}
+
+  /* ---------------number-------- */
+#number .card {
+  margin-top: 0 !important;
+  padding-top: 10px !important;
+}
+
+   /* --------slider---------- */
+#carouselExampleCaptions {
+    width: 100% !important;
+}
+
+#slider .image .carousel-item .pic {
+  width: 30%;
+}
+
+  #slider p {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+
+   /* --------blog---------- */
+  #blog .container .row .card-body .move {
+    top: 55%;
+  }
+
+  /* --------contact---------- */
+  #contact .space {
+    margin-top: 30px;
+  }
+
+  #contact form button {
+    margin-bottom: 0 !important ;
+  }
+
+#contact .text h3 {
+  padding-top: 0 !important ;
+  }
+
+#contact .text-right .icons ul {
+  margin-left: 0 !important;
+}
+
+#contact .text-right .icons ul li  {
+  padding-left: 0 !important;
+}
+
+   /* --------Footer---------- */
+  footer .content {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width:569px) and (max-width:768px) {
+
+  header h1 {
+    font-size: 50px !important;
+    font-weight: 600 !important;
+  }
+/* --------about----------- */
+#about .data-img {
+  text-align: left !important;
+}
+
+#about .data-skills h4,
+#about .data-skills span {
+  padding-left: 0 !important;
+}
+
+#about .data-skills .progress
+{
+  margin-left: 0 !important;
+}
+
+   /* --------slider---------- */
+   #carouselExampleCaptions {
+    width: 100% !important;
+}
+
+   /* --------blog---------- */
+   #blog .container .row .card-body .move {
+    top: 58%;
+  }
+
+#slider .image .carousel-item .pic {
+  width: 30%;
+}
+
+  #slider p {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+     /* --------Footer---------- */
+  footer .content {
+      width: 50% !important;
+}
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+
+  #services .container .card h5 {
+    font-size: 17px;
+  }
+
+
+  #portfolio .card-title {
+    font-size: 16px !important;
+  }
+  
+  #carouselExampleCaptions {
+    width: 100% !important;
+  }
+  
+  #slider .image .carousel-item .pic {
+  width: 30%;
+  }
+  
+  #slider p {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  
+     /* --------blog---------- */
+    #blog .container .row .card-body .move {
+      top: 81%;
+      width: 100px;
+    }
+  
+    #blog .subtitle {
+      width: 100%;
+    }
+
+       /* --------Footer---------- */
+  footer .content {
+    width: 50% !important;
+  }
+}

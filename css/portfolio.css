@@ -1,0 +1,198 @@
+body {
+  background-color: #f5f5f5;
+}
+
+/*--------------Start Section One (Header)-------------*/
+/*--------------Navbar-------------*/
+.navbar {
+  font-weight: 600;
+  background-color: #4D9EF2;
+  z-index: 5;
+}
+
+.navbar-toggler {
+  background-color: white !important;
+  padding: 0;
+}
+
+/*--------------DropDown-------------*/
+.navbar .logo {
+  font-size: 28px;
+}
+
+.navbar-nav li:hover > ul.dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  right: 100%;
+}
+
+.dropdown-item i {
+  padding-left: 20px;
+  font-size: 10px;
+}
+
+/*--------------Links-------------*/
+.link {
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.5s;
+  color: #27292c;
+}
+
+.link:hover {
+  color: #007aff;
+  background-color: transparent;
+}
+
+.line::after {
+  content: "";
+  background-color: white;
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  top: 80%;
+  left: 20px;
+}
+
+.extra::after {
+  width: 70px;
+}
+
+.hide::after {
+  visibility: hidden;
+  left: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.hide:hover.hide::after {
+  visibility: visible;
+  left: 20px;
+}
+/*--------------Header-------------*/
+header {
+height: 55%;
+}
+
+
+header .image {
+  background-image: url(../image/overlay-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+header .overlay {
+  background-color: #007aff;
+  opacity: 0.7;
+}
+
+/* -----------Caption-------------   */
+.caption .name {
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 86px;
+}
+
+header .caption .link {
+  color: #cde1f8;
+}
+
+/* ------------End Section One  (Header)------------ */
+
+
+/* ------------start Section two  (project)------------ */
+#project  .carousel-indicators button {
+  width: 10px !important ;
+  height: 10px !important;
+  border-radius: 50% !important;
+  border: 1px solid #007aff;
+}
+
+#project .carousel-indicators .active {
+  background-color: #007aff !important;
+}
+
+#project .right .card {
+  background-color: #F5F5F5;
+  box-shadow: 0px 0 30px rgb(78 78 78 / 8%);
+  border: none;
+}
+
+#project .right .card h3 {
+  font-weight: 700;
+  font-size: 22px;
+  border-bottom: solid 1px #eee;
+}
+
+#project .right .card ul li span{
+  font-size: 15px;
+  font-weight: 700;
+  color: #4e4e4e;
+}
+
+#project .right .bottom h3 {
+  color: #1e1e1e;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+#project .right .bottom p{
+  color: #4e4e4e;
+}
+/* ------------End Section two  (project)------------ */
+
+/* ------------Start Section nine (footer)------------ */
+footer {
+  background-color: #0062D3;
+}
+
+footer span {
+  font-weight: bolder;
+}
+
+footer p {
+  line-height: 1.8;
+}
+
+/* ------------End Section nine (footer)------------ */
+
+
+/*---------Media Query ------------*/
+
+@media screen and (max-width:568px) {
+  h1{
+    font-size: 40px !important;
+    
+  }
+
+   /* --------Footer---------- */
+  footer .content {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width:569px) and (max-width:768px) {
+  h1{
+    font-size: 50px !important;
+  }
+     /* --------Footer---------- */
+  footer .content {
+      width: 100% !important;
+}
+}
+
+@media screen and (min-width:769px) and (max-width:992px) {
+
+       /* --------Footer---------- */
+  footer .content {
+    width: 50% !important;
+  }
+}
